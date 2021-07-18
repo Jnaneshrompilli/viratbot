@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot name="viratbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <xacro:include filename="$(find viratbot_description)/urdf/viratbot.gazebo.xacro"/>
+    <xacro:include filename="$(find viratbot_description)/urdf/viratbot.gazebo.xacro" />
 
     <link name="base_link"></link>
 
@@ -9,7 +9,7 @@
         <inertial>
             <mass value="3" />
             <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.17" iyz="0" izz="0.2" />
-            <origin xyz="0 0 0.2" rpy="0 0 0" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
         </inertial>
 
         <collision>
@@ -20,34 +20,40 @@
         </collision>
 
         <visual>
-            <origin rpy=" 0 0 0" xyz="0 0 0.2" />
+            <origin rpy=" 0 0 0" xyz="0 0 0" />
             <geometry>
                 <box size="0.8 0.4 0.2" />
             </geometry>
         </visual>
 
         <collision>
-            <origin xyz="0.3 0 0.1" rpy="0 0 0" />
+            <origin xyz="0.3 0 -0.1" rpy="0 0 0" />
             <geometry>
                 <sphere radius="0.1" />
             </geometry>
         </collision>
 
         <visual>
-            <origin xyz=" 0.3 0 0.1" rpy="0 0 0" />
+            <origin xyz=" 0.3 0 -0.1" rpy="0 0 0" />
             <geometry>
                 <sphere radius="0.1" />
             </geometry>
         </visual>
 
         <visual>
-            <origin xyz="0.3 0 0.43" rpy="0 0 0" />
+            <origin xyz="0.3 0 0.23" rpy="0 0 0" />
             <geometry>
                 <cylinder radius="0.03" length="0.5" />
             </geometry>
         </visual>
 
     </link>
+
+    <joint name="base_chassis_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="chassis" />
+        <origin xyz="0 0 0.2" rpy="0 0 0" />
+    </joint>
 
     <link name="right_wheel">
 
@@ -97,23 +103,19 @@
 
     </link>
 
-    <joint name="base_chassis_joint" type="fixed">
-        <parent link="base_link" />
-        <child link="chassis" />
-    </joint>
 
     <joint name="right_wheel_hinge" type="continuous">
         <parent link="chassis" />
         <child link="right_wheel" />
         <axis xyz="0 1 0" />
-        <origin xyz="-0.2 0.26 0.2" rpy="0 0 0" />
+        <origin xyz="-0.2 0.26 0" rpy="0 0 0" />
     </joint>
 
     <joint name="left_wheel_hinge" type="continuous">
         <parent link="chassis" />
         <child link="left_wheel" />
         <axis xyz="0 1 0" />
-        <origin xyz="-0.2 -0.26 0.2" rpy="0 0 0" />
+        <origin xyz="-0.2 -0.26 0" rpy="0 0 0" />
     </joint>
 
     <link name="camera">
@@ -142,8 +144,8 @@
     <joint name="camera_joint" type="fixed">
 
         <axis xyz="0 0 1" />
-        <origin xyz="0.35 0 0.6" rpy="0 0.5 0" />
-        <parent link="chassis"/>
+        <origin xyz="0.35 0 0.4" rpy="0 0.5 0" />
+        <parent link="chassis" />
         <child link="camera" />
 
     </joint>
