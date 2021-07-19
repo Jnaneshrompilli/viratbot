@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <robot name="viratbot">
+    
+    <gazebo reference="caster">
+        <material>Gazebo/Black</material>
+    </gazebo>
 
     <!-- Camera Plugin -->
     <gazebo reference="camera">
@@ -39,6 +43,7 @@
         </sensor>
     </gazebo>
 
+    
     <gazebo>
         <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
 
@@ -46,7 +51,7 @@
           <leftJoint>left_wheel_hinge</leftJoint>
           <rightJoint>right_wheel_hinge</rightJoint>
           <wheelSeparation>0.52</wheelSeparation>
-          <wheelDiameter>0.4</wheelDiameter>
+          <wheelDiameter>0.28</wheelDiameter>
           <wheelAcceleration>1.0</wheelAcceleration>
           <wheelTorque>20</wheelTorque>
           <commandTopic>cmd_vel</commandTopic>
@@ -54,7 +59,7 @@
           <odometryFrame>odom</odometryFrame>
           <robotBaseFrame>base_link</robotBaseFrame>
           <odometrySource>1</odometrySource>
-          <publishWheelTF>true</publishWheelTF>
+          <!-- <publishWheelTF>true</publishWheelTF> -->
           <publishOdom>true</publishOdom>
           <publishWheelJointState>true</publishWheelJointState>
           <legacyMode>false</legacyMode>
