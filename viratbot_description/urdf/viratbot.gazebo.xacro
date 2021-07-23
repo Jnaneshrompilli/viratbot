@@ -12,7 +12,7 @@
             <camera name="head">
                 <horizontal_fov>1.3962634</horizontal_fov>
                 <image>
-                    <width>800</width>
+                    <width>1000</width>
                     <height>800</height>
                     <format>R8G8B8</format>
                 </image>
@@ -47,10 +47,10 @@
     <gazebo>
         <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
 
-          <updateRate>20</updateRate>
+          <updateRate>40</updateRate>
           <leftJoint>left_wheel_hinge</leftJoint>
           <rightJoint>right_wheel_hinge</rightJoint>
-          <wheelSeparation>0.52</wheelSeparation>
+          <wheelSeparation>0.42</wheelSeparation>
           <wheelDiameter>0.28</wheelDiameter>
           <wheelAcceleration>1.0</wheelAcceleration>
           <wheelTorque>20</wheelTorque>

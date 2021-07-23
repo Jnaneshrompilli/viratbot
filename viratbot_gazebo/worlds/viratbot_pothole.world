@@ -39,60 +39,11 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
-    <model name='my_ground_plane'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>20 20</size>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <cast_shadows>0</cast_shadows>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>20 20</size>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://ground_plane/materials/scripts</uri>
-              <uri>model://ground_plane/materials/textures/</uri>
-              <name>GroundPlane/Image</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>-0.287153 -0.173346 0 0 -0 0</pose>
-    </model>
     <state world_name='default'>
-      <sim_time>3093 268000000</sim_time>
-      <real_time>133 799273822</real_time>
-      <wall_time>1626666138 758419579</wall_time>
-      <iterations>133178</iterations>
+      <sim_time>3682 931000000</sim_time>
+      <real_time>214 779566760</real_time>
+      <wall_time>1626867337 231601072</wall_time>
+      <iterations>214037</iterations>
       <model name='my_ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -105,7 +56,7 @@
       </model>
       <model name='pot_hole'>
         <pose>-4.58589 -1.18761 0 0 -0 0</pose>
-        <scale>0.673552 0.673552 1</scale>
+        <scale>0.396108 0.396108 1</scale>
         <link name='base_link'>
           <pose>-4.58589 -1.18761 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -115,7 +66,7 @@
       </model>
       <model name='pot_hole_clone'>
         <pose>-7.0214 -5.12721 0 0 -0 0</pose>
-        <scale>0.789663 0.789663 1</scale>
+        <scale>0.492632 0.492632 1</scale>
         <link name='base_link'>
           <pose>-7.0214 -5.12721 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -125,7 +76,7 @@
       </model>
       <model name='pot_hole_clone_0'>
         <pose>-0.008321 -3.59165 0 0 -0 0</pose>
-        <scale>0.78046 0.78046 1</scale>
+        <scale>0.617372 0.617372 1</scale>
         <link name='base_link'>
           <pose>-0.008321 -3.59165 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -155,7 +106,7 @@
       </model>
       <model name='pot_hole_clone_3'>
         <pose>6.65797 6.9551 0 0 -0 0</pose>
-        <scale>0.63419 0.63419 1</scale>
+        <scale>0.287089 0.287089 1</scale>
         <link name='base_link'>
           <pose>6.65797 6.9551 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -184,10 +135,10 @@
         </link>
       </model>
       <model name='pot_hole_clone_6'>
-        <pose>-3.46623 -7.85613 0 0 -0 0</pose>
-        <scale>0.7024 0.7024 1</scale>
+        <pose>0.464744 -10.2636 0 0 -0 0</pose>
+        <scale>0.392083 0.392083 1</scale>
         <link name='base_link'>
-          <pose>-3.46623 -7.85613 0 0 -0 0</pose>
+          <pose>0.464744 -10.2636 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -203,13 +154,103 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='pot_hole_clone_clone'>
+        <pose>-8 -11.5629 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='base_link'>
+          <pose>-8 -11.5629 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='pot_hole_clone_clone_0'>
+        <pose>7.26078 -16.5239 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='base_link'>
+          <pose>7.26078 -16.5239 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='pot_hole_clone_clone_1'>
+        <pose>-14.2823 -0.117825 0 0 -0 0</pose>
+        <scale>0.873397 0.873397 1</scale>
+        <link name='base_link'>
+          <pose>-14.2823 -0.117825 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='pot_hole_clone_clone_2'>
+        <pose>-14.6059 -8.30835 0 0 -0 0</pose>
+        <scale>0.754209 0.754209 1</scale>
+        <link name='base_link'>
+          <pose>-14.6059 -8.30835 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='pot_hole_clone_clone_3'>
+        <pose>-10.1154 12.9295 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='base_link'>
+          <pose>-10.1154 12.9295 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='pot_hole_clone_clone_4'>
+        <pose>2.32109 14.901 0 0 -0 0</pose>
+        <scale>1.19679 1.19679 1</scale>
+        <link name='base_link'>
+          <pose>2.32109 14.901 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='pot_hole_clone_clone_5'>
+        <pose>15.0028 12.2819 0 0 -0 0</pose>
+        <scale>0.705036 0.705036 1</scale>
+        <link name='base_link'>
+          <pose>15.0028 12.2819 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='pot_hole_clone_clone_6'>
+        <pose>12.3321 3.95196 0 0 -0 0</pose>
+        <scale>1.23574 1.23574 1</scale>
+        <link name='base_link'>
+          <pose>12.3321 3.95196 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='pot_hole_clone_clone_7'>
+        <pose>15.4151 -9.00246 0 0 -0 0</pose>
+        <scale>0.842054 0.842054 1</scale>
+        <link name='base_link'>
+          <pose>15.4151 -9.00246 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <light name='sun'>
         <pose>0 0 10 0 -0 0</pose>
       </light>
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-11.2596 -4.62404 5.74177 -0 0.413795 0.2282</pose>
+        <pose>16.15 -2.04952 59.6938 0 1.3458 2.71138</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -220,7 +261,7 @@
         <visual name='pothole'>
           <geometry>
             <cylinder>
-              <radius>1.10212</radius>
+              <radius>2.42933</radius>
               <length>0.0005</length>
             </cylinder>
           </geometry>
@@ -237,7 +278,7 @@
         <visual name='pothole'>
           <geometry>
             <cylinder>
-              <radius>0.80184</radius>
+              <radius>1.28589</radius>
               <length>0.0005</length>
             </cylinder>
           </geometry>
@@ -254,7 +295,7 @@
         <visual name='pothole'>
           <geometry>
             <cylinder>
-              <radius>0.820859</radius>
+              <radius>1.34762</radius>
               <length>0.0005</length>
             </cylinder>
           </geometry>
@@ -288,7 +329,7 @@
         <visual name='pothole'>
           <geometry>
             <cylinder>
-              <radius>0.3722</radius>
+              <radius>0.277064</radius>
               <length>0.0005</length>
             </cylinder>
           </geometry>
@@ -305,7 +346,7 @@
         <visual name='pothole'>
           <geometry>
             <cylinder>
-              <radius>1.24317</radius>
+              <radius>3.09095</radius>
               <length>0.0005</length>
             </cylinder>
           </geometry>
@@ -322,7 +363,7 @@
         <visual name='pothole'>
           <geometry>
             <cylinder>
-              <radius>0.283479</radius>
+              <radius>0.160721</radius>
               <length>0.0005</length>
             </cylinder>
           </geometry>
@@ -356,7 +397,7 @@
         <visual name='pothole'>
           <geometry>
             <cylinder>
-              <radius>1.01345</radius>
+              <radius>2.05416</radius>
               <length>0.0005</length>
             </cylinder>
           </geometry>
@@ -373,7 +414,7 @@
         <visual name='pothole'>
           <geometry>
             <cylinder>
-              <radius>0.322252</radius>
+              <radius>0.207694</radius>
               <length>0.0005</length>
             </cylinder>
           </geometry>
@@ -383,6 +424,208 @@
         <kinematic>0</kinematic>
       </link>
       <pose>-8 7 0 0 -0 0</pose>
+    </model>
+    <model name='my_ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://ground_plane/materials/scripts</uri>
+              <uri>model://ground_plane/materials/textures/</uri>
+              <name>GroundPlane/Image</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>13.3202 1.71412 0 0 -0 0</pose>
+    </model>
+    <model name='pot_hole_clone_clone'>
+      <static>1</static>
+      <link name='base_link'>
+        <visual name='pothole'>
+          <geometry>
+            <cylinder>
+              <radius>0.80184</radius>
+              <length>0.0005</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-8 -11.5629 0 0 -0 0</pose>
+    </model>
+    <model name='pot_hole_clone_clone_0'>
+      <static>1</static>
+      <link name='base_link'>
+        <visual name='pothole'>
+          <geometry>
+            <cylinder>
+              <radius>0.80184</radius>
+              <length>0.0005</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>2 -12.4415 0 0 -0 0</pose>
+    </model>
+    <model name='pot_hole_clone_clone_1'>
+      <static>1</static>
+      <link name='base_link'>
+        <visual name='pothole'>
+          <geometry>
+            <cylinder>
+              <radius>0.80184</radius>
+              <length>0.0005</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-14.2823 -0.117825 0 0 -0 0</pose>
+    </model>
+    <model name='pot_hole_clone_clone_2'>
+      <static>1</static>
+      <link name='base_link'>
+        <visual name='pothole'>
+          <geometry>
+            <cylinder>
+              <radius>0.80184</radius>
+              <length>0.0005</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-14.6059 -8.30835 0 0 -0 0</pose>
+    </model>
+    <model name='pot_hole_clone_clone_3'>
+      <static>1</static>
+      <link name='base_link'>
+        <visual name='pothole'>
+          <geometry>
+            <cylinder>
+              <radius>0.80184</radius>
+              <length>0.0005</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-10.1154 12.9295 0 0 -0 0</pose>
+    </model>
+    <model name='pot_hole_clone_clone_4'>
+      <static>1</static>
+      <link name='base_link'>
+        <visual name='pothole'>
+          <geometry>
+            <cylinder>
+              <radius>0.80184</radius>
+              <length>0.0005</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>2.32109 14.901 0 0 -0 0</pose>
+    </model>
+    <model name='pot_hole_clone_clone_5'>
+      <static>1</static>
+      <link name='base_link'>
+        <visual name='pothole'>
+          <geometry>
+            <cylinder>
+              <radius>0.80184</radius>
+              <length>0.0005</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>15.0028 12.2819 0 0 -0 0</pose>
+    </model>
+    <model name='pot_hole_clone_clone_6'>
+      <static>1</static>
+      <link name='base_link'>
+        <visual name='pothole'>
+          <geometry>
+            <cylinder>
+              <radius>0.80184</radius>
+              <length>0.0005</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>12.3321 3.95196 0 0 -0 0</pose>
+    </model>
+    <model name='pot_hole_clone_clone_7'>
+      <static>1</static>
+      <link name='base_link'>
+        <visual name='pothole'>
+          <geometry>
+            <cylinder>
+              <radius>0.801839</radius>
+              <length>0.0005</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>18 -9 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
