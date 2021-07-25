@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <robot name="viratbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
     <xacro:include filename="$(find viratbot_description)/urdf/viratbot.gazebo.xacro" />
+    
 
     <link name="base_link"></link>
 
@@ -184,10 +185,18 @@
     <joint name="camera_joint" type="fixed">
 
         <axis xyz="0 0 1" />
-        <origin xyz="0.43 0 0.4" rpy="0 0.5 0" />
+        <origin xyz="0.43 0 0.4" rpy="0 0.63 0" />
         <parent link="chassis" />
         <child link="camera" />
 
+    </joint>
+
+    <!-- Frame for reference -->
+    <link name="camera_base"></link>
+    <joint name="camera_b_chassis" type="fixed">
+        <origin xyz="0.43 0 0" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="camera_base" />
     </joint>
 
 </robot>

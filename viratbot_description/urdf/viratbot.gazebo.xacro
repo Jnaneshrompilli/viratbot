@@ -5,6 +5,7 @@
         <material>Gazebo/Black</material>
     </gazebo>
 
+
     <!-- Camera Plugin -->
     <gazebo reference="camera">
         <sensor type="camera" name="camera1">
