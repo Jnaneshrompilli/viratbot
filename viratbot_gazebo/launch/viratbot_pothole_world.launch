@@ -12,7 +12,7 @@
         <arg name="recording" value="false" />
         <arg name="debug" value="false" />
     </include>
-
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
     <!-- Convert xacro and put on parameter server-->
     <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find viratbot_description)/urdf/viratbot.urdf.xacro'" />
     <!-- Spawn a robot into Gazebo-->
